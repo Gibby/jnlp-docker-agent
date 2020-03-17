@@ -1,3 +1,3 @@
 FROM gibby/jnlp-docker-agent:latest
 
-RUN apk add nodejs npm go
+RUN apk add nodejs npm

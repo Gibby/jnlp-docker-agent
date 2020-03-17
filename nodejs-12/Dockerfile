@@ -2,8 +2,6 @@ FROM gibby/jnlp-docker-agent:latest
 
 ENV NODE_VERSION 12.16.1
 
-RUN apk add go
-
 # Adapted from https://github.com/nodejs/docker-node/blob/master/12/alpine3.9/Dockerfile
 RUN apk update \
     && apk add --upgrade curl \
