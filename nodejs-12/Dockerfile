@@ -2,7 +2,7 @@ FROM gibby/jnlp-docker-agent:latest
 
 ENV NODE_VERSION 12.16.1
 
-RUN apk add zip go
+RUN apk add go
 
 # Adapted from https://github.com/nodejs/docker-node/blob/master/12/alpine3.9/Dockerfile
 RUN apk update \
@@ -74,6 +74,3 @@ RUN apk update \
   # smoke tests
   && node --version \
   && npm --version
-
-RUN go get github.com/aktau/github-release
-RUN ln -sf /home/jenkins/go/bin/github-release /bin/github-release
